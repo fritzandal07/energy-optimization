@@ -15,11 +15,13 @@ This system simulates a temperature control system with mock data. It has three 
 
 ## How to Run
 
-### 1. Prepare the CSV Files
+### 1. Prepare the Files
 1. **mock_data/sensor_data.csv** – Contains mock sensor data for the simulation. For occupancy, 1 is for Occupied and 0 for Unoccupied.
-2. **sensor_log.csv**: Logs the sensor data (timestamp, temperature, occupancy, power).
-3. **decisions.log**: Logs the decisions made by the Decision Engine (e.g., "raise setpoint", "lower setpoint", "do nothing").
-4. **actuator.log**: Logs the simulated actuator actions based on the decisions (e.g., "Simulating actuator change").
+### Files Generated During Execution
+Once the scripts are running, the following files will be generated in the logs/ directory:
+1. **log/sensor_log.csv**: Logs the sensor data (timestamp, temperature, occupancy, power).
+2. **log/decisions.log**: Logs the decisions made by the Decision Engine (e.g., "raise setpoint", "lower setpoint", "do nothing").
+3. **log/actuator.log**: Logs the simulated actuator actions based on the decisions (e.g., "Simulating actuator change").
 
 ### 2. Set Up and Run the Scripts
 Initial Setup (Only for the first time):
